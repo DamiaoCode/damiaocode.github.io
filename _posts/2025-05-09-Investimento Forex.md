@@ -1,7 +1,6 @@
 ---
 layout: post
 tittle: "Investimento Forex"
-category: blog
 tags: dinheiro investimentos forex automação produtividade
 ---
 # **Investimento Forex**
