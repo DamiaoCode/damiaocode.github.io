@@ -34,7 +34,11 @@ sidebar:
 
 
 </style>
-
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+  crossorigin="anonymous"
+></script>
 <!-- Conteúdo principal -->
 <main class="col-md-9 col-lg-10 p-4 bg-white">
 <h2 class="mb-4">Conversor de Ângulos</h2>
@@ -141,8 +145,3 @@ updateConversions();
 <script src="{{ '/assets/js/niv_trig_reciprocas.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/niv_trig_simples.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/niv_trig_tabela.js' | relative_url }}"></script>
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-VzCcJ1HZt1YhFjHbKLDItuXQbZ05ks+1N+E0rA5qJ0xQz08N2DD1l91X5nUJZxkz" crossorigin="anonymous">
-
-<!-- Bootstrap JS Bundle (inclui Popper.js, necessário para abas, dropdowns, etc.) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
