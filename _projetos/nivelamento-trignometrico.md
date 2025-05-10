@@ -41,7 +41,8 @@ sidebar:
 ></script>
 
 <!-- Conteúdo principal -->
-<main class="col-md-9 col-lg-10 p-4 bg-white">
+<div class="p-4 bg-white">
+
 <h2 class="mb-4">Nivelamento Trigonométrico</h2>
 
 <!-- Tabs -->
@@ -223,7 +224,7 @@ sidebar:
 </div>
 
 
-</main>
+</div>
 
 <script src="{{ '/assets/js/niv_trig_reciprocas.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/niv_trig_simples.js' | relative_url }}"></script>
