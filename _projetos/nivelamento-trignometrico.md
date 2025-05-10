@@ -231,5 +231,5 @@ sidebar:
 <script src="{{ '/assets/js/niv_trig_tabela.js' | relative_url }}"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoHyAVp5rZg7lA4z2vJ8q+f6c1U5j1yX6gfYXQcd6p6M/8J"
-        crossorigin="anonymous"></script>
+  integrity="sha384-ENjdO4Dr2bkBIFxQpeoHyAVp5rZg7lA4z2vJ8q+f6c1U5j1yX6gfYXQcd6p6M/8J"
+  crossorigin="anonymous"></script>
