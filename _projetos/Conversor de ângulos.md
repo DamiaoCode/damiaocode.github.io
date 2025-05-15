@@ -2,7 +2,7 @@
 layout: page
 title: Conversor de ângulos
 icon: fas fa-archive
-imagem: "https://files.passeidireto.com/7f4a1ff3-1a63-4d18-9d8b-e875f326d8f0/bg2.png"
+imagem: "https://www.wikihow.com/images/c/cb/Convert-Degrees-to-Radians-Step-5-Version-2.jpg"
 ---
 
 <!-- Head -->

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Conversor de ângulos
+title: Nivelamento Trigonométrico
 icon: fas fa-archive
 imagem: "https://files.passeidireto.com/7f4a1ff3-1a63-4d18-9d8b-e875f326d8f0/bg2.png"
 ---
