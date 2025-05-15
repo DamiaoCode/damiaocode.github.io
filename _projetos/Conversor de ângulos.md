@@ -5,6 +5,9 @@ icon: fas fa-archive
 imagem: "https://files.passeidireto.com/7f4a1ff3-1a63-4d18-9d8b-e875f326d8f0/bg2.png"
 ---
 
+<!-- Head -->
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+
 <main class="col-md-9 col-lg-10 p-4 bg-white">
 <h2 class="mb-4">Conversor de Ângulos</h2>
 
@@ -106,3 +109,6 @@ input.placeholder = (unit === 'deghms') ? 'Ex: 45 30 15' : 'Insira um valor...';
 updateConversions();
 });
 </script>
+
+<!-- No fim do body -->
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
