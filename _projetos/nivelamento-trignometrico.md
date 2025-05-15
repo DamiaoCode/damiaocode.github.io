@@ -34,6 +34,8 @@ padding-right: 2rem;
 
 
 </style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 
 <!-- Conteúdo principal -->
 <div class="p-4 bg-white">
@@ -63,6 +65,7 @@ padding-right: 2rem;
 <input type="number" id="cotaEstacao" class="form-control mb-3" step="0.001" placeholder="Ex: 250.000">
 
 <!-- Alturas -->
+
 <label for="alturaEstacao" class="form-label">Altura da Estação (hi)</label>
 <input type="number" id="alturaEstacao" class="form-control mb-2" step="0.001">
 
@@ -70,8 +73,10 @@ padding-right: 2rem;
 <input type="number" id="alturaAlvo" class="form-control mb-2" step="0.001">
 
 <!-- Formato do ângulo -->
+
 <label for="formatoAngulo" class="form-label mt-3">Formato do Ângulo Zenital</label>
 <select class="form-select mb-3" id="formatoAngulo" onchange="trocarFormato()">
+
 <option value="decimal">Grau Decimal</option>
 <option value="gms">Graus, Minutos, Segundos</option>
 </select>
@@ -99,6 +104,7 @@ padding-right: 2rem;
 </div>
 
 <!-- Distância inclinada -->
+
 <label for="distInclinada" class="form-label mt-3">Distância Inclinada (D') em metros</label>
 <input type="number" id="distInclinada" class="form-control mb-3" step="0.001">
 
@@ -111,7 +117,6 @@ padding-right: 2rem;
 <input class="form-check-input" type="checkbox" id="corrEsfer">
 <label class="form-check-label" for="corrEsfer">Aplicar correção da esfericidade</label>
 </div>
-
 
 <!-- Erros Instrumentais -->
 <div class="row g-2 mt-4">
@@ -183,7 +188,6 @@ Calcular incerteza da cota do ponto visado
 <!-- Aba 3: Nivelamento - Zenitais Recíprocas -->
 <div class="tab-pane fade" id="reciprocas" role="tabpanel">
 
-
 <div class="mb-3 mt-3">
 <label for="formatoAnguloReciproco" class="form-label">Formato do Ângulo Zenital</label>
 <select class="form-select" id="formatoAnguloReciproco" onchange="trocarFormatoReciproco()">
@@ -213,15 +217,14 @@ Calcular incerteza da cota do ponto visado
 </div>
 
 <button class="btn btn-primary mt-3" onclick="calcularReciproco()">Calcular</button>
+
 <p id="resultadoReciproco" class="mt-3 fw-bold"></p>
 </div>
 
 </div>
-
 
 </div>
 
 <script src="{{ '/assets/js/niv_trig_reciprocas.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/niv_trig_simples.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/niv_trig_tabela.js' | relative_url }}"></script>
-
