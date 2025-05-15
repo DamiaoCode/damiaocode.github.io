@@ -5,9 +5,6 @@ icon: fas fa-archive
 order: 1
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
 <div class="container mt-4">
 
 <!-- Campo de Pesquisa -->
@@ -32,7 +29,6 @@ data-descricao="{{ projeto.descricao | downcase }}">
 </div>
 {% endfor %}
 </div>
-
 
 <!-- Script de pesquisa -->
 <script>
@@ -60,4 +56,3 @@ cards.forEach(card => {
 });
 }
 </script>
-
