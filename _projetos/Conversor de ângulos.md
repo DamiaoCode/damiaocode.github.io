@@ -18,7 +18,7 @@ imagem: "https://files.passeidireto.com/7f4a1ff3-1a63-4d18-9d8b-e875f326d8f0/bg2
 </div>
 <div class="col-md-6 col-lg-4">
 <label for="angleUnit" class="form-label">Unidade</label>
-<select class="form-select border-primary rounded shadow" id="angleUnit">
+<select class="form-select" id="angleUnit">
 <option value="deg">Graus (°)</option>
 <option value="deghms">Graus (hh:mm:ss)</option>
 <option value="rad">Radianos (rad)</option>
