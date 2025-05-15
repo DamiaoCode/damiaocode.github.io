@@ -7,10 +7,8 @@ order: 1
 
 <div class="container mt-4">
 
-<!-- Campo de Pesquisa -->
-<div class="mb-4">
-<input type="text" class="form-control" id="searchProjetos" placeholder="Pesquisar projetos..." onkeyup="filtrarProjetos()">
-</div>
+<!-- Head -->
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
 
 <div class="row row-cols-1 row-cols-md-3 g-4" id="gridProjetos">
 {% assign projetos_ordenados = site.projetos | sort: "order" %}
@@ -30,29 +28,4 @@ data-descricao="{{ projeto.descricao | downcase }}">
 {% endfor %}
 </div>
 
-<!-- Script de pesquisa -->
-<script>
-function removerAcentos(texto) {
-return texto
-  .normalize("NFD")
-  .replace(/[\u0300-\u036f]/g, "")
-  .toLowerCase();
-}
-
-function filtrarProjetos() {
-const input = removerAcentos(document.getElementById("searchProjetos").value);
-const cards = document.querySelectorAll(".projeto-card");
-
-cards.forEach(card => {
-  const title = removerAcentos(card.getAttribute("data-title") || "");
-  const descricao = removerAcentos(card.getAttribute("data-descricao") || "");
-  const textoCompleto = title + " " + descricao;
-
-  if (textoCompleto.includes(input)) {
-    card.style.display = "block"; // ou "flex" se necessário
-  } else {
-    card.style.display = "none";
-  }
-});
-}
-</script>
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
