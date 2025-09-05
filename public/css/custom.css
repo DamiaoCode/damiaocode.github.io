@@ -1,0 +1,87 @@
+/* Layout personalizado para posts em linha (imagem | informação) */
+
+.post-entry {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    gap: 1rem !important;
+    padding: 1rem !important;
+}
+
+.post-entry .entry-cover {
+    flex: 0 0 200px !important;
+    margin-bottom: 0 !important;
+    text-align: left !important;
+    order: 1 !important;
+}
+
+.post-entry .entry-cover img {
+    width: 100% !important;
+    height: 150px !important;
+    object-fit: cover !important;
+    border-radius: var(--radius) !important;
+}
+
+.post-entry .entry-content-wrapper {
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    min-height: 150px !important;
+    order: 2 !important;
+}
+
+.post-entry .entry-header {
+    margin-bottom: 0.5rem !important;
+}
+
+.post-entry .entry-content {
+    margin: 0.5rem 0 !important;
+}
+
+.post-entry .entry-footer {
+    margin-top: auto !important;
+}
+
+/* Responsividade - voltar ao layout vertical em ecrãs pequenos */
+@media (max-width: 768px) {
+    .post-entry {
+        flex-direction: column !important;
+    }
+    
+    .post-entry .entry-cover {
+        flex: none !important;
+        width: 100% !important;
+        order: 1 !important;
+    }
+    
+    .post-entry .entry-cover img {
+        height: auto !important;
+    }
+    
+    .post-entry .entry-content-wrapper {
+        min-height: auto !important;
+        order: 2 !important;
+    }
+}
+
+/* Primeiro post mantém layout especial */
+.first-entry {
+    flex-direction: column !important;
+}
+
+.first-entry .entry-cover {
+    flex: none !important;
+    width: 100% !important;
+    margin-bottom: var(--gap) !important;
+    order: 1 !important;
+}
+
+.first-entry .entry-cover img {
+    height: auto !important;
+}
+
+.first-entry .entry-content-wrapper {
+    min-height: auto !important;
+    order: 2 !important;
+}

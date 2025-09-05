@@ -1,0 +1,33 @@
+baseURL = 'https://example.org/'
+languageCode = 'pt-pt'
+title = 'DamiaoDoesDev'
+theme = 'papermod'
+
+[params]
+  # Comentários com Utterances
+  comments = true
+  utterances = true
+  utterancesRepo = "DamiaoCode/damiaocode.github.io"
+  utterancesIssueTerm = "pathname"
+  utterancesTheme = "github-light"
+  
+  # Configurações de conteúdo
+  mainSections = ["posts"]
+  disableSpecial1stPost = true
+
+  dateFormat = "2 de Janeiro de 2006"
+  ShowReadingTime = true
+  readingTime = true
+
+[menu] 
+  [[menu.main]]
+    identifier = "home"
+    name = "Início"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "about"
+    name = "Sobre"
+    url = "/about"
+    weight = 2
+  
