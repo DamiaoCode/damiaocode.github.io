@@ -19,6 +19,8 @@ theme = 'papermod'
   ShowReadingTime = true
   readingTime = true
 
+  GoogleAnalytics = "G-D3CHNS3M2V"
+
 [menu] 
   [[menu.main]]
     identifier = "home"
