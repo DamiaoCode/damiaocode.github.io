@@ -1,0 +1,38 @@
+[date_format]
+other = "2 de January de 2006"
+
+[month_1]
+other = "janeiro"
+
+[month_2]
+other = "fevereiro"
+
+[month_3]
+other = "março"
+
+[month_4]
+other = "abril"
+
+[month_5]
+other = "maio"
+
+[month_6]
+other = "junho"
+
+[month_7]
+other = "julho"
+
+[month_8]
+other = "agosto"
+
+[month_9]
+other = "setembro"
+
+[month_10]
+other = "outubro"
+
+[month_11]
+other = "novembro"
+
+[month_12]
+other = "dezembro"
