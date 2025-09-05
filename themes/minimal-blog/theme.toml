@@ -1,8 +1,0 @@
-name = "Minimal Blog"
-license = "MIT"
-licenselink = "https://github.com/your-username/minimal-blog/blob/main/LICENSE"
-description = "Um tema minimalista e limpo para blogs Hugo"
-homepage = "https://github.com/your-username/minimal-blog"
-tags = ["blog", "minimal", "clean", "responsive"]
-features = ["responsive", "clean", "minimal"]
-min_version = "0.41.0"

@@ -1,7 +1,7 @@
 baseURL = 'https://damiaodoesdev.blog/'
 languageCode = 'pt-pt'
 title = 'DamiaoDoesDev'
-theme = 'minimal-blog'
+theme = 'papermod'
 
 [params]
 description = "Um blog minimalista sobre desenvolvimento web e tecnologia"

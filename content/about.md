@@ -27,3 +27,5 @@ Apaixonado por soluções e não problemas, desenvovimento e eu parece uma match
 - Git, Docker
 
 ## Obrigado pela visita e boa leitura :D
+
+

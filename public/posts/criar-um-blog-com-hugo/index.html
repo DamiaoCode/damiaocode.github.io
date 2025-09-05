@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Criar Um Blog Com Hugo | DamiaoDoesDev</title>
+<meta name="keywords" content="blog, hugo">
+<meta name="description" content="Uma das coisas que sempre quis fazer, mas sempre coloquei entraves foi criar um site, mais especificamente um blog!
+Depois de começar a minha jornada em desenvolvimento comecei a ficar sem desculpa para o fazer, mas depois veio a questão e como o faço? Que funcionalidades quero? Uso wordpress ou faço algo de raiz? Isto originou uma pesquisa até encontrar o vídeo do Fireship.io a falar do Hugo.
+
+      
+    
+
+O que é o Hugo?
+Hugo é um Open-Source SSG (Static Site Generator) feito em Go, que é conhecido pelo seu performace. Existem vários themes para começar imediatamente, mas também é possível criar os nosso próprios templates!">
+<meta name="author" content="Damião">
+<link rel="canonical" href="http://localhost:1313/posts/criar-um-blog-com-hugo/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.36819bea596090d8b48cf10d9831382996197aa7e4fc86f792f7c08c9ca4d23b.css" integrity="sha256-NoGb6llgkNi0jPENmDE4KZYZeqfk/Ib3kvfAjJyk0js=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/criar-um-blog-com-hugo/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="DamiaoDoesDev (Alt + H)">DamiaoDoesDev</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="Início">
+                    <span>Início</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/posts/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="Sobre">
+                    <span>Sobre</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Criar Um Blog Com Hugo
+    </h1>
+    <div class="post-meta"><span title='2025-09-05 10:55:55 +0100 BST'>September 5, 2025</span>&nbsp;·&nbsp;Damião
+
+</div>
+  </header> 
+  <div class="post-content"><p>Uma das coisas que sempre quis fazer, mas sempre coloquei entraves foi criar um site, mais especificamente um blog!</p>
+<p>Depois de começar a minha jornada em desenvolvimento comecei a ficar sem desculpa para o fazer, mas depois veio a questão e como o faço? Que funcionalidades quero? Uso wordpress ou faço algo de raiz? Isto originou uma pesquisa até encontrar o vídeo do <a href="https://www.youtube.com/@Fireship">Fireship.io</a> a falar do Hugo.</p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/0RKpf3rK57I?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+
+<h2 id="o-que-é-o-hugo">O que é o Hugo?<a hidden class="anchor" aria-hidden="true" href="#o-que-é-o-hugo">#</a></h2>
+<p><a href="https://gohugo.io/">Hugo</a> é um Open-Source SSG (Static Site Generator) feito em <a href="https://go.dev/">Go</a>, que é conhecido pelo seu performace. Existem vários <a href="https://themes.gohugo.io/themes">themes</a> para começar imediatamente, mas também é possível criar os nosso próprios templates!</p>
+<p>O que mais me suscitou interesse foi a simplicidade de criar posts em Markdown que o Hugo faz render para páginas HTML.</p>
+<h2 id="instalar-hugo">Instalar Hugo<a hidden class="anchor" aria-hidden="true" href="#instalar-hugo">#</a></h2>
+<p>Para instalar, visto que estou numa Windows Machine, usei o <a href="https://community.chocolatey.org/">Choco</a> com:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>choco install hugo-extended
+</span></span></code></pre></div><p>Para outros sistemas operativos, por favor ler a documentação do Hugo.</p>
+<h3 id="criar-um-site-hugo">Criar um site Hugo<a hidden class="anchor" aria-hidden="true" href="#criar-um-site-hugo">#</a></h3>
+<p>Depois de instalado, basta criar um novo diretório vazio e correr os comandos abaixo.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir blog
+</span></span><span style="display:flex;"><span>cd blog
+</span></span><span style="display:flex;"><span>hugo new site damiaodoesdev
+</span></span><span style="display:flex;"><span>git init 
+</span></span></code></pre></div><p>Com isto foi criado um novo site Hugo.</p>
+<p>Agora precisamos de instalar um tema, para este exemplo vou usar o <a href="https://github.com/adityatelange/hugo-PaperMod">PaperMod</a>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git submodule add --depth<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> https://github.com/adityatelange/hugo-PaperMod themes/papermod
+</span></span><span style="display:flex;"><span>echo theme<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;papermod&#39;</span> &gt;&gt; hugo.toml
+</span></span><span style="display:flex;"><span>hugo server
+</span></span></code></pre></div><p>E pronto temos um blog criado…</p>
+<p>Agora vamos mudar algumas configurações como o nome do autor, a descrição, o nome do site.</p>
+<p>Recomendo ler a documentação do <a href="https://github.com/adityatelange/hugo-PaperMod?tab=readme-ov-file">PaperMod</a> para entender o que se está a fazer.</p>
+<p>Para editar o nome do site vamos fazer o seguinte:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&lt;Nome do site&gt;&#39;</span> &gt;&gt; hugo.toml
+</span></span><span style="display:flex;"><span>echo <span style="color:#f92672">[</span>params<span style="color:#f92672">]</span> &gt;&gt; hugo.toml
+</span></span><span style="display:flex;"><span>echo author <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&lt;O nome do autor&gt;&#39;</span> &gt;&gt; hugo.toml
+</span></span><span style="display:flex;"><span>echo ShowPostNav <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;true&#39;</span>&gt;&gt; hugo.toml
+</span></span></code></pre></div><p>E neste momento é suposto ter algo assim:</p>
+<p><img alt="Site_Hugo.png" loading="lazy" src="/images/criar-um-blog-em-hugo/Site_Hugo.png"></p>
+<p>Isto parece muito vazio… vamos então adicionar conteúdo à página inicial criando na pasta /content um ficheiro _index.md (para um exemplo podemos consultar a o _index.md na pasta do theme)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># Olá este é o meu site em Hugo
+</span></span><span style="display:flex;"><span>Aqui vou mostrar como se faz um site com Hugo
+</span></span></code></pre></div><p>Agora se voltarmos à página vemos as alterações que fizemos!</p>
+<p><img alt="image.png" loading="lazy" src="/images/criar-um-blog-em-hugo/Index.png"></p>
+<p>E pronto temos um site 😀</p>
+<h2 id="adicionar-o-primeiro-post">Adicionar o primeiro Post!<a hidden class="anchor" aria-hidden="true" href="#adicionar-o-primeiro-post">#</a></h2>
+<p>Agora tudo o que nos falta é adicionar conteúdo ao nosso blog e para isso escrever o seguinte comando hugo:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>hugo new content posts/&lt;nome-do-post&gt;.md
+</span></span></code></pre></div><p>Depois vamos ao documento e começamos a escrever o post:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>+++
+</span></span><span style="display:flex;"><span>date = <span style="color:#e6db74">&#39;2025-09-05T12:48:39+01:00&#39;</span>
+</span></span><span style="display:flex;"><span>draft = false
+</span></span><span style="display:flex;"><span>title = <span style="color:#e6db74">&#39;Primeiro Post&#39;</span>
+</span></span><span style="display:flex;"><span>+++
+</span></span><span style="display:flex;"><span>Este é o meu primeiro post no blog em Hugo.
+</span></span></code></pre></div><p>E pronto, agora sim temos um blog com posts 😀</p>
+<p><img alt="image.png" loading="lazy" src="/images/criar-um-blog-em-hugo/Primeiro_Post.png"></p>
+<p>De qualquer forma isto parece um pouco cru e sem muito conteúdo, vamos adicionar um menu e uma página Sobre Mim</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>echo [<span style="color:#66d9ef">menu</span>] &gt;&gt; hugo.toml
+</span></span><span style="display:flex;"><span>echo [<span style="color:#66d9ef">[menu.main]</span>] &gt;&gt; hugo.toml
+</span></span><span style="display:flex;"><span>echo identifier = <span style="color:#e6db74">&#34;sobre&#34;</span> &gt;&gt; hugo.toml
+</span></span><span style="display:flex;"><span>echo name = <span style="color:#e6db74">&#34;Sobre Mim&#34;</span> &gt;&gt; hugo.toml
+</span></span><span style="display:flex;"><span>echo url = <span style="color:#e6db74">&#34;/sobre/&#34;</span> &gt;&gt; hugo.toml
+</span></span></code></pre></div><p>Agora na pasta /content adicionamos o <a href="http://sobre.md">sobre.md</a> e escrevemos o que queremos.</p>
+<p>Um novo menu irá aparecer com a opção Sobre Mim e uma nova página 😀</p>
+<p><img alt="image.png" loading="lazy" src="/images/criar-um-blog-em-hugo/Menu_Sobre.png"></p>
+<p>O tema PaperMod tem muitas funcionalidades, como readtime, os menus, etc…</p>
+<p>E com isto temos um Blog simples com a página inicial para listar posts e um sobre mim 😀</p>
+<h2 id="em-resumo">Em resumo<a hidden class="anchor" aria-hidden="true" href="#em-resumo">#</a></h2>
+<p>Sites Estáticos são um excelente alternativa a sistemas de gestão de conteúdo, e ainda melhor, não vêm com uma price tag, é completamente gratuito e relativamente simples de começar!
+Se estás à procura de como começar um blog ou migrar para uma alternativa de manutenção baixa Hugo é uma excelente alternativa.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/blog/">Blog</a></li>
+      <li><a href="http://localhost:1313/tags/hugo/">Hugo</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">DamiaoDoesDev</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
