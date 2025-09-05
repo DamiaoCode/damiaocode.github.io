@@ -1,0 +1,33 @@
+{{ define "main" }}
+<article class="post">
+    <header class="post-header">
+        {{ if .Params.image }}
+        <div class="post-image">
+            <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" />
+        </div>
+        {{ end }}
+        <h1 class="post-title">{{ .Title }}</h1>
+        <div class="post-meta">
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 de Janeiro de 2006" }}</time>
+            {{ if .Params.author }}
+            <span class="post-author">por {{ .Params.author }}</span>
+            {{ end }}
+        </div>
+    </header>
+
+    <div class="post-content">
+        {{ .Content }}
+    </div>
+
+    <footer class="post-footer">
+        {{ if .Params.tags }}
+        <div class="post-tags">
+            <strong>Tags:</strong>
+            {{ range .Params.tags }}
+            <span class="tag">{{ . }}</span>
+            {{ end }}
+        </div>
+        {{ end }}
+    </footer>
+</article>
+{{ end }}

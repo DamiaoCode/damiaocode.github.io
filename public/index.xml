@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DamiaoDoesDev</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on DamiaoDoesDev</description>
+    <generator>Hugo</generator>
+    <language>pt-pt</language>
+    <lastBuildDate>Fri, 05 Sep 2025 09:36:23 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sobre</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Fri, 05 Sep 2025 09:36:23 +0100</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;h1 id=&#34;olá-eu-sou-o-damião&#34;&gt;Olá! Eu sou o Damião&lt;/h1&gt;&#xA;&lt;p&gt;Bem-vindo ao meu blog! Aqui partilho as minhas experiências, projetos, e o que estou a aprender sobre desenvolvimento web e tecnologia.&lt;/p&gt;&#xA;&lt;h2 id=&#34;eu&#34;&gt;Eu&lt;/h2&gt;&#xA;&lt;p&gt;Apaixonado por soluções e não problemas, desenvovimento e eu parece uma match made in heaven.&lt;/p&gt;&#xA;&lt;h2 id=&#34;o-que-faço-aqui&#34;&gt;O que faço aqui&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Tutoriais&lt;/strong&gt;: Guias passo a passo para diferentes tecnologias ou projetos&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Dicas&lt;/strong&gt;: Pequenas dicas que podem fazer a diferença no dia a dia&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Experiências&lt;/strong&gt;: Partilha de experiências com certas tecnologias ou projetos&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Projetos&lt;/strong&gt;: Mostrar os meu milhentos projetos não terminados 😂&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;tecnologias-que-uso&#34;&gt;Tecnologias que uso&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;HTML, CSS, JavaScript&lt;/li&gt;&#xA;&lt;li&gt;React&lt;/li&gt;&#xA;&lt;li&gt;Node.js, Python&lt;/li&gt;&#xA;&lt;li&gt;Git, Docker&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;obrigado-pela-visita-e-boa-leitura-d&#34;&gt;Obrigado pela visita e boa leitura :D&lt;/h2&gt;</description>
+    </item>
+  </channel>
+</rss>

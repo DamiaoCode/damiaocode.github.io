@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on DamiaoDoesDev</title>
+    <link>http://localhost:1313/tags/blog/</link>
+    <description>Recent content in Blog on DamiaoDoesDev</description>
+    <generator>Hugo</generator>
+    <language>pt-pt</language>
+    <lastBuildDate>Fri, 05 Sep 2025 09:36:18 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bem-vindo ao Meu Blog Hugo</title>
+      <link>http://localhost:1313/posts/primeiro-post/</link>
+      <pubDate>Fri, 05 Sep 2025 09:36:18 +0100</pubDate>
+      <guid>http://localhost:1313/posts/primeiro-post/</guid>
+      <description>&lt;p&gt;Este é o primeiro post do meu novo blog criado com Hugo!&lt;/p&gt;&#xA;&lt;h2 id=&#34;o-que-é-o-hugo&#34;&gt;O que é o Hugo?&lt;/h2&gt;&#xA;&lt;p&gt;O Hugo é um gerador de sites estáticos rápido e moderno, escrito em Go. Ele é perfeito para criar blogs, sites corporativos e documentação.&lt;/p&gt;&#xA;&lt;h2 id=&#34;por-que-escolhi-o-hugo&#34;&gt;Por que escolhi o Hugo?&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Velocidade&lt;/strong&gt;: Hugo é extremamente rápido para gerar sites&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Simplicidade&lt;/strong&gt;: Fácil de usar e configurar&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Flexibilidade&lt;/strong&gt;: Muitos temas e personalizações disponíveis&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Markdown&lt;/strong&gt;: Escrevo posts em Markdown, que é simples e poderoso&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;próximos-passos&#34;&gt;Próximos passos&lt;/h2&gt;&#xA;&lt;p&gt;Nos próximos posts, vou compartilhar:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
