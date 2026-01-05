@@ -8,7 +8,7 @@ title = 'Criar Um Blog Com Hugo'
 
 Uma das coisas que sempre quis fazer, mas sempre coloquei entraves foi criar um site, mais especificamente um blog! 
 
-Depois de começar a minha jornada em desenvolvimento comecei a ficar sem desculpa para o fazer, mas depois veio a questão e como o faço? Que funcionalidades quero? Uso wordpress ou faço algo de raiz? Isto originou uma pesquisa até encontrar o vídeo do [Fireship.io](https://www.youtube.com/@Fireship) a falar Hugo.
+Depois de começar a minha jornada em desenvolvimento comecei a ficar sem desculpa para o fazer, mas depois veio a questão e como o faço? Que funcionalidades quero? Uso wordpress ou faço algo de raiz? Isto originou uma pesquisa até encontrar o vídeo do [Fireship.io](https://www.youtube.com/@Fireship) a falar do Hugo.
 
 {{< youtube 0RKpf3rK57I >}}
 
