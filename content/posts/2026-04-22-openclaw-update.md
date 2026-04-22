@@ -1,6 +1,6 @@
 ---
 title: "OpenClaw Evolui: Descubra as Novidades da Última Atualização"
-date: 2026-04-22T16:25:00Z
+date: 2026-04-22T16:20:00Z
 draft: false
 ---
 
