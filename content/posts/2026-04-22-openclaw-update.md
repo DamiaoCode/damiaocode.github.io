@@ -2,6 +2,8 @@
 title: "OpenClaw Evolui: Descubra as Novidades da Última Atualização"
 date: 2026-04-22T16:20:00Z
 draft: false
+author: "Damião"
+tags: ["OpenClaw", "IA", "Automação", "Gemini", "Multimodal"]
 ---
 
 O universo da inteligência artificial está em constante movimento, e o OpenClaw, o seu assistente pessoal, não é exceção. A mais recente atualização representa um salto significativo, introduzindo novas capacidades que transformam a forma como interagimos com a tecnologia e automatizamos o nosso dia a dia.
